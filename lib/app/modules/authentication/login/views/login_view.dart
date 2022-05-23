@@ -20,11 +20,11 @@ class LoginView extends GetView<LoginController> {
             child: Container(
               color: AppColors.white,
               child: Padding(
-                padding: EdgeInsets.only(top: 25, left: 16, bottom: 36.9),
+                padding: EdgeInsets.only(top: Get.height*0.1, left: Get.height*0.04, bottom: Get.height*0.2),
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(height: 70,),
+                      SizedBox(height: Get.height * 0.04,),
                       Text(
                         AppStrings.signinCaption1,
                         style: AppTextTheme.theme.headline3?.copyWith(
@@ -43,9 +43,9 @@ class LoginView extends GetView<LoginController> {
                           fontWeight: FontWeight.w500,
                         ),
                       ),
-                      SizedBox(height: 100,),
+                      SizedBox(height: Get.height * 0.1,),
                       Padding(
-                        padding: EdgeInsets.only(top: 16.0, right: 15),
+                        padding: EdgeInsets.only(top: Get.height * 0.04, right: Get.height * 0.04),
                         child: AuthenticationTextField(
                           hintText: AppStrings.userId,
                           isObscure: false,
@@ -57,7 +57,7 @@ class LoginView extends GetView<LoginController> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.only(top: 15.0, right: 15),
+                        padding: EdgeInsets.only(top: Get.height * 0.04, right: Get.height * 0.04),
                         child: AuthenticationTextField(
                           hintText: AppStrings.password,
                           isObscure: true,
@@ -70,11 +70,11 @@ class LoginView extends GetView<LoginController> {
                       ),
                       Padding(
                         padding:
-                        EdgeInsets.only(left: 28.0, right: 15.0, top: 14.0),
+                        EdgeInsets.only(left: Get.height * 0.25, right:Get.height * 0.03, top: Get.height * 0.02,),
                         child: Text(
                           AppStrings.forgotpass,
                           style: AppTextTheme.theme.headline3?.copyWith(
-                            color: AppColors.white,
+                            color: AppColors.richBlack ,
                             fontSize: 16,
                             letterSpacing: 1,
                             fontWeight: FontWeight.w500,
@@ -85,7 +85,7 @@ class LoginView extends GetView<LoginController> {
                         children: [
                           Expanded(
                             child: Padding(
-                              padding: EdgeInsets.only(right:15.0,top: 15.0),
+                              padding: EdgeInsets.only(right:Get.height * 0.04,top: Get.height * 0.04),
                               child: ElevatedButton(
                                 onPressed: () {
                                 },
@@ -120,8 +120,8 @@ class LoginView extends GetView<LoginController> {
                                 fontWeight: FontWeight.w500,
                               ),
                             ),
-                            const SizedBox(
-                              width: 5,
+                             SizedBox(
+                              width: Get.height*0.01,
                             ),
                             InkWell(
                               onTap: () {
@@ -136,6 +136,9 @@ class LoginView extends GetView<LoginController> {
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),
+                            ),
+                            SizedBox(
+                              width: Get.height*0.02,
                             ),
                           ],
                         ),
