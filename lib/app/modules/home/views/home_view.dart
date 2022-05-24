@@ -15,19 +15,15 @@ class HomeView extends GetView<HomeController> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        centerTitle: true,
         title: Text(
           "hi " + AppStrings.fname,
           style: TextStyle(color: AppColors.black),
         ),
+        centerTitle: true,
         actions: [
-          Row(
-            children: [
-              Icon(
-                Icons.microwave_outlined,
-                color: AppColors.black,
-              ),
-            ],
+          Icon(
+            Icons.microwave_outlined,
+            color: AppColors.black,
           )
         ],
       ),
@@ -47,24 +43,56 @@ class HomeView extends GetView<HomeController> {
                 mainAxisSpacing: Get.height * 0.04,
                 children: [
                   Container(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Icon(Icons.edit_calendar_rounded),
+                        Text(AppStrings.attendence)
+                      ],
+                    ),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.all(Radius.circular(10)),
                       color: AppColors.slimyGreen,
                     ),
                   ),
                   Container(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Icon(Icons.edit_calendar_rounded),
+                        Text(AppStrings.attendence)
+                      ],
+                    ),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.all(Radius.circular(10)),
                       color: AppColors.buttonBlue,
                     ),
                   ),
                   Container(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Icon(Icons.edit_calendar_rounded),
+                        Text(AppStrings.attendence)
+                      ],
+                    ),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.all(Radius.circular(10)),
                       color: AppColors.fireOpalRed,
                     ),
                   ),
                   Container(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Icon(Icons.edit_calendar_rounded),
+                        Text(AppStrings.attendence)
+                      ],
+                    ),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.all(Radius.circular(10)),
                       color: AppColors.selectiveYellow,
