@@ -1,4 +1,3 @@
-
 class AppStrings {
 //authentcation
   static const String signinCaption1 = 'Hello! let\'s get started';
@@ -29,4 +28,8 @@ class AppStrings {
   static const String enterOtp = 'Enter your OTP';
   static const String confirm = 'Confirm';
   static const String sendOtp = 'Re send OTP';
+  static const String attendence = 'Attendence';
+  static const String studlist = 'Student List';
+  static const String schedule = 'Schedule';
+  static const String hispace = ' Hi ';
 }
