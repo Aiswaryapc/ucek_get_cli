@@ -32,4 +32,8 @@ class AppStrings {
   static const String studlist = 'Student List';
   static const String schedule = 'Schedule';
   static const String hispace = ' Hi ';
+  static const String profile = 'Profile';
+  static const String sclass = 'Class';
+  static const String srno = 'register number';
+  static const String sadmi_date = 'year of admission';
 }
