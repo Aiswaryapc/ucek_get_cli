@@ -23,7 +23,7 @@ class HomeView extends GetView<HomeController> {
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  '12/12/20022',
+                  '12/12/2022',
                   style: AppTextTheme.theme.bodyText2?.copyWith(
                       color: AppColors.richBlack, fontSize: 16, letterSpacing: 1),
                 ),
