@@ -41,6 +41,11 @@ class HomeView extends GetView<HomeController> {
               ],
             ),
             SizedBox(height: Get.height*0.04,),
+
+
+
+
+
             Text(
               'Ms Shijidha Shain',
               style: AppTextTheme.theme.bodyText2?.copyWith(
