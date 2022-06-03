@@ -53,7 +53,7 @@ class ProfileView extends GetView<ProfileController> {
                               ),
                               blurRadius: 10.0,
                               spreadRadius: 2.0,
-                            ), //BoxShadow
+                            ),
                             BoxShadow(
                               color: Colors.white,
                               offset: const Offset(0.0, 0.0),
